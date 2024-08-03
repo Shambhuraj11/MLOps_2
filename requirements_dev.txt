@@ -6,6 +6,7 @@ fastapi
 uvicorn
 mlflow
 dvc 
+xgboost
 
 # dev requirements - 
 
