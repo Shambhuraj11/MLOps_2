@@ -3,11 +3,11 @@ scikit-learn
 numpy 
 seaborn
 fastapi
-uvicorn
+uvicorn == 0.30.4
 mlflow
 dvc 
-xgboost
-
+xgboost == 2.1.1
+mlflow == 2.15.1
 # dev requirements - 
 
 pytest
