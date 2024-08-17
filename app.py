@@ -1,5 +1,4 @@
 from fastapi import FastAPI, Request, Form, Depends
-# from fastapi.responses import HTMLResponse
 import os 
 import sys 
 from src.logger.logging import logging
@@ -14,36 +13,6 @@ app = FastAPI(title= "Gemstone")
 
 pred_pipeline = PredictionPipeline()
 custom_data_obj = CustomData()
-
-
-# def get_form_data(
-#     carat: float = Form(...),
-#     cut: str = Form(...),
-#     color: str = Form(...),
-#     clarity: str = Form(...),
-#     depth: float = Form(...),
-#     table: float = Form(...),
-#     x: float = Form(...),
-#     y: float = Form(...),
-#     z: float = Form(...)
-# ) -> Requestmodel:
-#     return Requestmodel(
-#         carat=carat,
-#             depth=depth,
-#             table=table,
-#             x=x,
-#             y=y,
-#             z=z,
-#             cut=cut,
-#             color=color,
-#             clarity=clarity
-#     )
-
-
-# @app.get("/", response_class=HTMLResponse)
-# async def get_form(request: Request):
-#     return templates.TemplateResponse("form.html", {"request":request})
-
 
 @app.post("/api",response_model= Responsemodel, tags= ['Get Price'])
 # def get_price(request: Requestmodel = Depends(get_form_data)):

@@ -6,3 +6,5 @@ fastapi
 uvicorn
 mlflow
 dvc 
+pendulum
+apache-airflow

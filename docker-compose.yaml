@@ -1,0 +1,8 @@
+version: '2.0'  # Do not update version
+services:
+  application:
+    build: .
+    image: fastapiimage
+    container_name: gemestone-price
+    ports:
+      - "8080:8080"

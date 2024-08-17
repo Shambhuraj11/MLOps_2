@@ -8,6 +8,8 @@ mlflow
 dvc 
 xgboost == 2.1.1
 mlflow == 2.15.1
+pendulum
+apache-airflow
 # dev requirements - 
 
 pytest
