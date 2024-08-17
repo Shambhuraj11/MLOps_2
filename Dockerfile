@@ -3,8 +3,8 @@ USER root
 RUN mkdir /app
 COPY . /app/
 WORKDIR /app/
-RUN pip3 install -r requirements.txt
-RUN python setup.py install
+RUN pip install -r requirements.txt
+RUN pip install dist/dimondpriceprediction-0.1.2.tar.gz
 
 ENV AIRFLOW_HOME="/app/airflow"
 ENV AIRFLOW_CORE_DAGBAG_IMPORT_TIMEOUT=1000

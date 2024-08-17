@@ -8,3 +8,5 @@ mlflow
 dvc 
 pendulum
 apache-airflow
+
+# -e .
